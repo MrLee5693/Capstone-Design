@@ -1,6 +1,6 @@
 # split.py
 
-## 곡 34040개 사용 
+## 곡 35919개 사용 
 ### dataframe columns = ["userId","train_positive","train_negative","test_rating","test_negative"]<br>
 * userId : user id
 * train_positive : interacted song
