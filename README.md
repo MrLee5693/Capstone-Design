@@ -1,5 +1,6 @@
-# split.py
-
+# Capstone Design
+## 딥러닝을 활용한 음악 추천 시스템 연구<br>
+* Dataset : Melon playlist
 ## 곡 35919개 사용 
 ### dataframe columns = ["userId","train_positive","train_negative","test_rating","test_negative"]<br>
 * userId : user id
@@ -9,4 +10,7 @@
 (테스트할 때 한 번도 못 보게 하기 위해 따로 분류) 
 * train_negative : 각 interacted song당 num_negative 만큼 샘플링하기 위해 train_positive, test_rating, test_negative와 겹치지 않는 모든 곡들의 집합 
 (학습을 진행할 때 train_negative에서 num_negative 만큼 매 에폭마다 뽑아주면서 학습)
+
+## 실험결과
+* 업데이트 예정
 
