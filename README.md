@@ -1,6 +1,6 @@
 # Capstone Design
 ## 딥러닝을 활용한 음악 추천 시스템 연구<br>
-* Dataset : Melon playlist
+* Dataset : [Melon playlist](https://arena.kakao.com/c/8)
 * Model : [Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031)
 ## 곡 35919개 사용 
 ### dataframe columns = ["userId","train_positive","train_negative","test_rating","test_negative"]<br>
