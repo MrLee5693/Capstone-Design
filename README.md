@@ -30,7 +30,7 @@
 
 
 <details>
-<summary><h2> Total Experiment results </h2></summary>
+<summary> Just Click! <h2> Total Experiment results </h2></summary>
 <div markdown="1">
 
 | HR@10 | NDCG@10 | Num of Neg | Num Factor | Num Layer |
