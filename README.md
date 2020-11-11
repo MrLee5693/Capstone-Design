@@ -30,7 +30,7 @@
 
 
 <details>
-<summary> Total Experiment results </summary>
+<summary><h2> Total Experiment results </h2></summary>
 <div markdown="1">
 
 | HR@10 | NDCG@10 | Num of Neg | Num Factor | Num Layer |
@@ -44,7 +44,7 @@
 | -     |  -      |      1     |      32    |     1     |
 | -     |  -      |      5     |      32    |     1     |
 | -     |  -      |      10    |      32    |     1     |
-| 0.7723|   0.4926|      1     |      8     |     2     |
+| 0.7847|   0.5082|      1     |      8     |     2     |
 | -     |  -      |      5     |      8     |     2     |
 | -     |  -      |      10    |      8     |     2     |
 | -     |  -      |      1     |      16    |     2     |
