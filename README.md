@@ -5,18 +5,31 @@
 <img width='768' src='https://user-images.githubusercontent.com/52492949/98676852-7edb3700-239f-11eb-91e3-e6f40c2ece45.png'>
 
 
-## 곡 35919개 사용 
-### dataframe columns = ["userId","train_positive","train_negative","test_rating","test_negative"]<br>
-`train_positive` : interacted song<br>
->
-`test_rating` : Leave one out으로 고른 test song (곡 발매일 기준으로 최신 곡을 test song으로 분류)<br>
->
-`test_negative` : train_positive와 test_rating에 없는 곡들 중 랜덤하게 뽑은 각 유저당 99개의 곡들의 집합<br>
->
-`train_negative` : 각 interacted song당 train_positive, test_rating, test_negative와 겹치지 않는 모든 곡들의 집합<br> 
+- [x] **Users : 105141** 
+- [x] **Songs : 35919**  
+
+### Metric 
+
+- [x] **NDCG@10**
+- [x] **HR@10** 
+
+---
+
+## How to use 
+
+### Dependencies
+
+- [x] **Pytorch** 
 
 
-## 실험결과
+## Experiment results
+
+- [x] **Num of Neg : 1,5,10**<br> 
+>
+- [x] **Num Factor : 8,16,32**<br> 
+>
+- [x] **Num Layer : 1,2,3**<br>
+
 | HR@10 | NDCG@10 | Num of Neg | Num Factor | Num Layer |
 |:-----:|:-------:|:----------:|:----------:|:---------:|
 | 0.7912|   0.5140|      1     |      8     |     1     |
