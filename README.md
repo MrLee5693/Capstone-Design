@@ -30,7 +30,7 @@
 
 
 <details>
-    <summary>  Total Experiment results 
+    <summary>  <h1>Total Experiment results</h1> 
     </summary>
 <div markdown="1">
 
