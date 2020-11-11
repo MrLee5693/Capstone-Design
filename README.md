@@ -30,10 +30,10 @@
 
 
 <details>
-<h2>
+
      Total Experiment results 
     
-</h2>
+
 <div markdown="1">
 
 | HR@10 | NDCG@10 | Num of Neg | Num Factor | Num Layer |
