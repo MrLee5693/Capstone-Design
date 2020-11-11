@@ -2,6 +2,9 @@
 ## 딥러닝을 활용한 음악 추천 시스템 연구<br>
 * Dataset : [Melon playlist](https://arena.kakao.com/c/8)
 * Model : [Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031)[![GitHub stars](https://img.shields.io/github/stars/hexiangnan/neural_collaborative_filtering.svg?logo=github&label=Stars)]
+<img width='768' src='https://user-images.githubusercontent.com/52492949/98676852-7edb3700-239f-11eb-91e3-e6f40c2ece45.png'>
+
+
 ## 곡 35919개 사용 
 ### dataframe columns = ["userId","train_positive","train_negative","test_rating","test_negative"]<br>
 `train_positive` : interacted song<br>
