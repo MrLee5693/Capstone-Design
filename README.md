@@ -31,8 +31,8 @@
 
 <details>
 <h2>
-    <summary>  Total Experiment results 
-    </summary>
+     Total Experiment results 
+    
 </h2>
 <div markdown="1">
 
