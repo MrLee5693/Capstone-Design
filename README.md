@@ -1,6 +1,5 @@
 # Capstone Design
-## 딥러닝을 활용한 음악 추천 시스템 연구
-
+## -딥러닝을 활용한 음악 추천시스템 연구-
 ---
 * Dataset : [Melon playlist](https://arena.kakao.com/c/8)<br>
 `Users` : **105141** <br>
