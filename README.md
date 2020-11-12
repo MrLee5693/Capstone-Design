@@ -51,7 +51,7 @@
 
 
 <details>
-    <summary style="font-Weight : bold; font-size : 30px;">  <p>Total Experiment results</p> 
+    <summary style="font-Weight : bold; font-size : 100px;">  <p>Total Experiment results</p> 
     </summary>
 <div markdown="1">
 
