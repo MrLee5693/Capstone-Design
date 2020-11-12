@@ -43,15 +43,15 @@
 
 ## Experiment results
 
-- [x] **Num of Neg : 1,5,10**<br> 
+- [x] **Num Neg : 1,5,10**<br> 
 >
-- [x] **Num Factor : 8,16,32**<br> 
+- [x] **Num Factor : 4,8,16**<br> 
 >
 - [x] **Num Layer : 1,2,3**<br>
 
 
 <details>
-    <summary>  <h1>Total Experiment results</h1> 
+    <summary style="font-Weight : bold; font-size : 30px;">  <p>Total Experiment results</p> 
     </summary>
 <div markdown="1">
 
