@@ -15,10 +15,31 @@
 
 ## How to use 
 
-### Dependencies
+### Languages 
 
-- [x] **Pytorch** 
+<p align="left">
+  <a href="#">
+    <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/languages/python.svg" alt="python" style="vertical-align:top; margin:6px 4px">
+  </a> 
 
+</p>
+
+### Tools
+
+<p align="left">
+  <a href="#">
+    <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/tools/docker.svg" alt="docker" style="vertical-align:top; margin:6px 4px">
+  </a> 
+
+  <a href="#">
+    <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/tools/bash.svg" alt="bash" style="vertical-align:top; margin:6px 4px">
+  </a> 
+
+  <a href="#">
+    <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/tools/visualstudio_code.svg" alt="visualstudio_code" style="vertical-align:top; margin:6px 4px">
+  </a> 
+
+</p>
 
 ## Experiment results
 
@@ -36,33 +57,34 @@
 
 | HR@10 | NDCG@10 | Num of Neg | Num Factor | Num Layer |
 |:-----:|:-------:|:----------:|:----------:|:---------:|
+| -    ?|  -      |      1     |      4     |     1     |
+| -     |  -      |      5     |      4     |     1     |
+| -     |  -      |      10    |      4     |     1     |
 | 0.7912|   0.5140|      1     |      8     |     1     |
 | 0.8013|   0.5444|      5     |      8     |     1     |
 | 0.7469|   0.5026|      10    |      8     |     1     |
 | 0.8224|   0.5610|      1     |      16    |     1     |
 | 0.8193|   0.5795|      5     |      16    |     1     |
 | 0.7984|   0.5598|      10    |      16    |     1     |
-| -     |  -      |      1     |      32    |     1     |
-| -     |  -      |      5     |      32    |     1     |
-| -     |  -      |      10    |      32    |     1     |
+| -    ?|  -      |      1     |      4     |     2     |
+| -     |  -      |      5     |      4     |     2     |
+| -     |  -      |      10    |      4     |     2     |
 | 0.7965|   0.5266|      1     |      8     |     2     |
 | 0.8000|   0.5527|      5     |      8     |     2     |
-| 0.7155|   0.4759|      10    |      8     |     2     |
-| -     |  -      |      1     |      16    |     2     |
-| -     |  -      |      5     |      16    |     2     |
-| -     |  -      |      10    |      16    |     2     |
-| -     |  -      |      1     |      32    |     2     |
-| -     |  -      |      5     |      32    |     2     |
-| -     |  -      |      10    |      32    |     2     |
+| 0.7481|   0.5055|      10    |      8     |     2     |
+| 0.8152|   0.5576|      1     |      16    |     2     |
+| 0.8193|   0.5795|      5     |      16    |     2     |
+| 0.7898|   0.5530|      10    |      16    |     2     |
+| -    ?|  -      |      1     |      4     |     3     |
+| -     |  -      |      5     |      4     |     3     |
+| -     |  -      |      10    |      4     |     3     |
 | 0.8030|   0.5412|      1     |      8     |     3     |
 | 0.8026|   0.5524|      5     |      8     |     3     |
 | 0.7696|   0.5324|      10    |      8     |     3     |
 | 0.8155|   0.5590|      1     |      16    |     3     |
 | 0.8152|   0.5732|      5     |      16    |     3     |
 | 0.7860|   0.5465|      10    |      16    |     3     |
-| -     |  -      |      1     |      32    |     3     |
-| -     |  -      |      5     |      32    |     3     |
-| -     |  -      |      10    |      32    |     3     |
+
 
 </div>
 </details>
