@@ -21,7 +21,7 @@ class UserItemRatingDataset(Dataset):
         return self.user_tensor.size(0)
 
 
-
+# NCF를 위한 전처리 과정
 class Make_Dataset(object):
     def __init__(self, ratings):
         #args : ratings: pd.DataFrame, which contains 5 columns = ['userId', 'train_positive', 'train_negative', 'test_rating','test_negative']
@@ -39,7 +39,7 @@ class Make_Dataset(object):
         
         
     def _trainset(self, ratings):
-        #학습 데이터를 생성한다.
+        # Train Positive를 통해 Train dataset을 만든다.
         user = np.array(np.repeat(ratings["userId"], self.positive_len))
         item = np.array([item for items in ratings['train_positive'] for item in items])
         rating = np.repeat(1, self.positive_len.sum()).reshape(-1)
@@ -49,11 +49,11 @@ class Make_Dataset(object):
 
     
     def _evaluate_data(self, ratings):
-        #make evaluate data
+        # test dataset 만들기
         test_user = np.array(ratings["userId"])
         test_item = np.array(ratings["test_rating"])
         
-        test_negative_user = np.array(np.repeat(ratings["userId"], 99))
+        test_negative_user = np.array(np.repeat(ratings["userId"], 99)) 
         test_negative_item = np.array(list(ratings["test_negative"])).reshape(-1)
         print(min(test_negative_item), max(test_negative_item), test_negative_item.shape)
         return [torch.LongTensor(test_user), torch.LongTensor(test_item), torch.LongTensor(test_negative_user),
@@ -62,16 +62,17 @@ class Make_Dataset(object):
     
     
 class SampleGenerator(object):
-    def __init__(self, user, item, rating, ratings, positive_len,num_neg):
+    def __init__(self, user, item, rating, ratings, positive_len, num_neg):
         self.user = user # 전처리한 데이터
         self.item = item # 전처리한 데이터
         self.rating = rating # 전처리한 데이터
         self.ratings = ratings # 원본 데이터
-        self.num_neg = num_neg
+        self.num_neg = num_neg #Train Negative Ratio
         self.positive_len = positive_len
         self.train_user, self.train_item, self.train_rating = self.total_train(ratings, positive_len, num_neg)
         
     def total_train(self,ratings,positive_len, num_neg):
+        # Train Positive + Train Negative를 합친 데이터 생성
         positive_len.rename("len", inplace = True)
         ratings = pd.concat([ratings,positive_len], axis = 1)
 
@@ -84,11 +85,11 @@ class SampleGenerator(object):
         train_item = np.hstack((self.item,negative_item))
         train_rating = np.hstack((self.rating,negative_rating))
  
-        #print(train_user.shape, train_item.shape, train_rating.shape)
         return train_user, train_item, train_rating
     
     
     def instance_a_train_loader(self, batch_size):
+        # Train dataset을 DataLoader에 올리기 위해 사용
         user = self.train_user
         item = self.train_item
         rating = self.train_rating        
@@ -96,4 +97,4 @@ class SampleGenerator(object):
                                         item_tensor=torch.LongTensor(item),
                                         target_tensor=torch.FloatTensor(rating))
 
-        return DataLoader(dataset, batch_size=batch_size, shuffle=True)
+        return DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers = 8)
