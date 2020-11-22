@@ -61,7 +61,9 @@
 ### 실행 코드 예시
 
 ```python
-python3 main.py --optim=adam --lr=1e-3 --epochs=20 --batch_size=1024 --latent_dim_mf=8 --num_layers=3 --num_neg=5 --l2=0.0 --gpu=2,3
+python3 main.py --optim=adam --lr=1e-3 --epochs=20 
+                --batch_size=1024 --latent_dim_mf=8 
+                --num_layers=3 --num_neg=5 --l2=0.0 --gpu=2,3
 ``` 
 
 ## 실험결과
@@ -300,7 +302,4 @@ python3 main.py --optim=adam --lr=1e-3 --epochs=20 --batch_size=1024 --latent_di
 | 0.7696|   0.5324|      10    |      8     |     3     |
 | 0.8155|   0.5590|      1     |      16    |     3     |
 | 0.8152|   0.5732|      5     |      16    |     3     |
-| 0.7860|   0.5465|      10    |      16    |     3     |
-
-</div>
-</details>
+| 0.7860|   0.5465|      10    |      16  
