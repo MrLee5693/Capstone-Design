@@ -57,6 +57,13 @@
 
 ---
 
+
+### 실행 코드 예시
+
+```python
+python3 main.py --optim=adam --lr=1e-3 --epochs=20 --batch_size=1024 --latent_dim_mf=8 --num_layers=3 --num_neg=5 --l2=0.0 --gpu=2,3
+``` 
+
 ## 실험결과
 > Num Neg : 학습할 때 사용하는 Negative의 비율, 이 때 기준은 각 유저당 Positive의 개수
 >
