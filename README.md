@@ -9,7 +9,7 @@
 
 ---
 
-### Performance Metrics
+### 성능지표
 
 - [x] **NDCG@10**
 - [x] **HR@10** 
